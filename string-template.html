@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Buka hasilnya di inspect element browser
+    </h1>
+    <script>
+        const name = 'Haiqal Utama';
+        const stringTemplate = `Name: ${name}`;
+        console.info(stringTemplate);
+
+        const firstName = 'Haiqal';
+        const middleName = 'Mochammad Satria';
+        const lastName = 'Utama';
+        const template = `Nama: ${firstName} ${middleName} ${lastName}`;
+        console.info(template);
+        
+        const value = 80;
+        const template2 = `Name: ${name}, Lulus: ${value > 70}`;
+        console.info(template2);
+
+        const multiline = ` Halo, nama saya haiqal
+        Saya tinggal di Jakarta
+        Saya suka makan nasi goreng.
+        kalo ngantuk ya turu`;
+        document.writeln('<pre>')
+        document.writeln(multiline)
+        document.writeln('</pre>')
+    </script>
+</body>
+</html>

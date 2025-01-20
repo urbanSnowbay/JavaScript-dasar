@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipe Data Array</title>
+</head>
+<body>
+    <script>
+        let arrayKosong = [];
+        let arrayNama = ["Haiqal", "Mochammad", "Satria", "Utama", 1, true];
+
+        const names = [];
+        names.push("Aku", "Suka", "Bermain komputer");
+        names.push("Kegemaranku adalah", "Ngoding");
+        console.table(names);
+
+        names[0] = "Data ini diubah";
+        names[1] = "dengan cara mengakses index";
+        names[2] = "ke dalam array";
+        console.table(names);
+
+        delete names[3];
+        console.table(names);
+
+        
+    </script>
+</body>
+</html>

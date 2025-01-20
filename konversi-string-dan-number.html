@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi String dan Number</title>
+</head>
+<body>
+    <script>
+        const value1 = parseInt("1");
+        const value2 = 1;
+        const sum = value1 + value2;
+        document.writeln(`<p>${sum}</p>`); // 2
+
+        document.writeln(`<p>${parseInt("1.1")}</p>`); // 1
+        document.writeln(`<p>${parseFloat("1.1")}</p>`); // 1.1
+        document.writeln(`<p>${Number("1.1")}</p>`); // 1.1
+
+        const a = 5;
+        const b = 7;
+        const total = a.toString() + b.toString();
+        document.writeln(`<p>${total}</p>`); // 57
+
+        document.writeln(`<p>${parseInt("2.1text")}</p>`); // 2
+        document.writeln(`<p>${parseFloat("2.1text")}</p>`); // 2.1
+        document.writeln(`<p>${Number("2.1text")}</p>`); // NaN
+
+        const first = Number("iniString");
+        const second = 100;
+        const result = first + second;
+        document.writeln(`<p>${result}</p>`); // NaN
+
+        document.writeln(`<p>${isNaN(first)}</p>`); // true
+        document.writeln(`<p>${isNaN(100)}</p>`); // false
+        document.writeln(`<p>${isNaN(result)}</p>`); // true
+
+    </script>
+</body>
+</html>
