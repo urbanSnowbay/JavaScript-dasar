@@ -23,7 +23,15 @@
         delete names[3];
         console.table(names);
 
+        names.push("ini isi value setelah index ke[4]");
+        console.table(names);
         
+        names[3] = "ini perubahan index ke-3 setelah dihapus";
+        console.table(names);
+
+        names.push(1,2,3);
+        names.push(["test", "array di dalam", "array"]);
+        console.table(names);
     </script>
 </body>
 </html>
