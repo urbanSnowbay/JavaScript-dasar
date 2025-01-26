@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const nilai = 80;
+        let ucapan;
+
+        if (nilai >= 85) {
+            ucapan = "Selamat anda lulus";
+        } else {
+            ucapan = "Silahkan coba lagi";
+        }
+        document.writeln(`<p>${ucapan}</p>`);
+
+        ucapan = nilai >= 85 ? "Selamat anda lulus" : "Silahkan coba lagi";
+        document.writeln(`<p>${ucapan}</p>`);
+    </script>
+</body>
+</html>

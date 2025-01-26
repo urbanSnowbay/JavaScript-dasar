@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.info("Hello" || ""); // Hello
+        console.info("" || []); // []
+        console.info("0" || "NOL"); // 0
+        console.info(0 || "NOL"); // NOL
+        console.info(null || "NULL"); // NULL
+        console.info(undefined || "UNDEFINED"); // UNDEFINED
+        console.info(0 || false); // false
+
+        const person = {
+            firstName: "",
+            lastName: "Utama",
+        };
+        const name = person.firstName || person.lastName;
+        console.info(name); // Utama
+
+        console.info("HELLO" && ""); // ""
+        console.info("" && []); // ""
+        console.info("0" && "NOL"); // NOL
+        console.info(0 && "NOL"); // 0
+        console.info(null && "NULL"); // null
+        console.info(undefined && "UNDEFINED"); // undefined
+        console.info(0 && false); // 0
+        console.info("undefined" && "null") // null
+
+        const orang = {
+            firstName: "",
+            lastName: "Utama",
+        };
+        const nama = orang.firstName && orang.lastName;
+        console.info(nama); // //
+    </script>
+</body>
+</html>
