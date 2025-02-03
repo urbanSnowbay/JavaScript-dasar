@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function register(name, gender = "UNKNOWN") {
+            console.info(name);
+            console.info(gender);
+        }
+        register(); // undefined UNKNOWN
+        register('Haiqal') // Haiqal UNKNOWN
+        register('Haiqal', 'MALE') // Haiqal MALE
+        register('Haiqal', undefined) // Haiqal UNKNOWN
+        register('Haiqal', null) // Haiqal null
+    </script>
+</body>
+</html>

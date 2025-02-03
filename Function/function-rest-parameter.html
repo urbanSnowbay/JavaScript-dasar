@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sum(kategori, name, ...data) {
+            let jumlah = 0;
+            for (const element of data) {
+                jumlah += element
+            }
+            document.writeln(`<p>${kategori} - ${name} berjumlah ${jumlah}</p>`);
+        }
+        sum('Alat elektronik', 'Mouse', 10, 20, 30);
+        sum('Alat elektronik', 'Monitor', 3, 7, 9);
+        sum('Alat elektronik', 'Keyboard', 20, 40, 10);
+
+        const alatMasak = [2, 2, 2];
+        sum('Alat masak', 'Panci', ...alatMasak);
+
+        function oldSum() {
+            let total = 0;
+            for (const element of arguments) {
+                total += element;
+            }
+            document.writeln(`<p>Total is ${total}</p>`)
+        }
+        oldSum(1, 2, 3, 4, 5);
+    </script>
+</body>
+</html>

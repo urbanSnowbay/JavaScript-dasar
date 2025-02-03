@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sayHello(firstName, lastName) {
+            const say = `Halo ${firstName} ${lastName}`;
+            return say;
+        }
+        const result = sayHello('Haiqal', 'Mochammad'); // code (return say;) akan masuk ke (const result)
+        document.writeln(result);
+
+        function getFinalScore(value) {
+            if (value >= 90) {
+                return 'A';
+            } else if (value >= 80) {
+                return 'B';
+            } else if (value >= 70) {
+                return 'C';
+            } else if (value >= 60) {
+                return 'D';
+            } else {
+                return 'Tidak lulus';
+            }
+        }
+        const finalValue = getFinalScore(59)
+        document.writeln(`<p>${finalValue}</p>`);
+
+        function isContaints(array, searchValue) {
+            for (const element of array) {
+                console.info(`Iterasi elemen ${element}`);
+                if (element === searchValue) {
+                    return true;
+                }
+            }
+            return false;
+        }
+        const array = [1, 2, 3, 4, 5, 666, 77, 8888, 9, 123, 324, 435,];
+        const search = 5;
+        const found = isContaints(array, search);
+        document.writeln(`${found}`);
+    </script>
+</body>
+</html>
